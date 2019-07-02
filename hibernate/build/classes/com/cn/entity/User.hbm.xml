@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.cn.entity.User" table="users" >
+        <id name="id" column="id" type="java.lang.Integer">
+            <!-- 主键的生成策略 -->
+            <generator class="assigned"/>
+        </id>
+        <property name="name" type="java.lang.String" column="name"/>
+        <property name="password" type="java.lang.String" column="password"/>
+         <property name="telephone" type="java.lang.String" column="telephone"/>
+          <property name="username" type="java.lang.String" column="username"/>
+           <property name="isadmin" type="java.lang.String" column="isadmin"/>
+        
+      
+    </class>
+</hibernate-mapping>
+<!-- 
+    class ==== 表
+    对象    =====一行数据
+    属性     ===== 列
+    属性的类型    ==== 列的类型
+
+ -->

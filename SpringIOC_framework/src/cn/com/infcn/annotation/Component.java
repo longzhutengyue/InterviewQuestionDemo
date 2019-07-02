@@ -1,0 +1,14 @@
+package cn.com.infcn.annotation;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+/**
+ * 指定需要容器管理的类
+ * 
+ * 先定义一个@Component注解。只要被@Component自定义主键注释的类都是受容器管理的Bean
+ */
+@Target({ ElementType.TYPE })
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Component {
+}
